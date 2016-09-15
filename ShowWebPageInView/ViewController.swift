@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var myWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // MARK: display URL
+        let url = NSURL (string: "http://www.sourcefreeze.com");
+        let requestObj = NSURLRequest(URL: url!);
+        myWebView.loadRequest(requestObj);
     }
 
     override func didReceiveMemoryWarning() {
