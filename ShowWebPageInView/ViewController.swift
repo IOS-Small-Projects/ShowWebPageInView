@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // MARK: display URL
-        let url = NSURL (string: "http://www.sourcefreeze.com");
+        // MARK: display URL 
+        let url = NSURL (string: "https://google.com");
         let requestObj = NSURLRequest(URL: url!);
         myWebView.loadRequest(requestObj);
     }
